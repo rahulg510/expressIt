@@ -6,18 +6,9 @@ var serviceAccount = require("../key.json");
 
 admin.initializeApp({
   credential: admin.credential.cert(serviceAccount),
-  databaseURL: "https://expressit-4d450.firebaseio.com"
+  databaseURL: DATABASE
 });
 
-var config = {
-    apiKey: "AIzaSyC5jzbdgWAcFPrK_ogIqhL71EMPlRVy_Fs",
-    authDomain: "expressit-4d450.firebaseapp.com",
-    databaseURL: "https://expressit-4d450.firebaseio.com",
-    projectId: "expressit-4d450",
-    storageBucket: "expressit-4d450.appspot.com",
-    messagingSenderId: "809532873161",
-    appId: "1:809532873161:web:98799436cac45e7fc3f018"
-};
 
 const firebase = require('firebase')
 firebase.initializeApp(config);
